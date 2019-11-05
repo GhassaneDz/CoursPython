@@ -14,8 +14,10 @@ characters = [
     "kirikou"
     ]
 # Show random quote
-# If user_answer is "B"
-# - leave the program
-#Else :
+if user_answer == "B":
+  pass
+elif user_answer == "C":
+  print("C pas la bonne réponse! Et pas d'humour, je c..")
+else :
 # - show another quote
     
