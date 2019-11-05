@@ -14,25 +14,25 @@ characters = [
     "kirikou"
     ]
 
+def message(character, quote):
+    n_character = character.capitalize()
+    n_quote = quote.capitalize()
+    return "{} a dit : {}".format(n_character, n_quote)
+
 def get_random_quote():
-    # ge a random number
+    # get a random number
     # get a quote from an array
-    # show the quote in the intepreter. print()
+    # show the quote in the interpreter
     pass
-get_random_quote()
 
 def get_random_item_in(my_list):
-    #TODO : get a random item
-    item = my_list[0] #get in item from a list. For the moment, just get the first one.
-    print(item)
-    return "program is over" #returned value
-print(get_random_item_in(quotes))
+    # TODO: get a random number
+    item = my_list[0] # get a quote from a list
+    return item # return the item
 
-user_answer = input('Tapez entrée pour découvrir une autre citation ou B pour quitter le programme.')    
-# Show random quote
-#if user_answer == "B":
-# pass
-#elif user_answer == "C":
-  #print("C pas la bonne réponse! Et pas d'humour, je c..")
-#else :
-# show another quote
+# Programm
+user_answer = input('Tapez entrée pour connaître une autre citation ou B pour quitter le programme.')
+
+while user_answer != "B":
+    print(message(get_random_item_in(characters), get_random_item_in(quotes)))
+    user_answer = input('Tapez entrée pour connaître une autre citation ou B pour quitter le programme.')
